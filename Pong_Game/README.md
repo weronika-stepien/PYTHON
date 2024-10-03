@@ -33,7 +33,7 @@
 
 
 ## Overview
-TA minimalistic Pong game implemented in Python using Pygame. It features smooth gameplay, paddle and ball mechanics, and customizable win conditions, all running at a smooth 60 FPS.
+The minimalistic Pong game implemented in Python using Pygame. It features smooth gameplay, paddle and ball mechanics plus customizable win conditions, all running at a smooth 60 FPS.
 
 
 ------------
