@@ -6,7 +6,7 @@
 
 ![Preview](/Images/todo.gif)
 
-![Version](https://img.shields.io/badge/version-1.0-blue?style=for-the-badge&labelColor=black) ![Static Badge](https://img.shields.io/badge/3-blue?style=for-the-badge&logo=python&logoColor=blue&label=python&labelColor=black) ![Static Badge](https://img.shields.io/badge/django-black?style=for-the-badge&logo=Django&logoColor=blue)  ![Static Badge](https://img.shields.io/badge/windows%20%7C%20macOs%20%7C%20linux-blue?style=for-the-badge&label=platform&labelColor=black)
+![Version](https://img.shields.io/badge/version-1.0-blue?style=for-the-badge&labelColor=black) ![Static Badge](https://img.shields.io/badge/3-blue?style=for-the-badge&logo=python&logoColor=blue&label=python&labelColor=black) ![Static Badge](https://img.shields.io/badge/django-black?style=for-the-badge&logo=Django&logoColor=blue) ![HTML Badge](https://img.shields.io/badge/HTML-5-blue?style=for-the-badge&logo=html5&logoColor=blue&label=HTML&labelColor=black) ![CSS Badge](https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=blue&label=CSS&labelColor=black) ![Static Badge](https://img.shields.io/badge/windows%20%7C%20macOs%20%7C%20linux-blue?style=for-the-badge&label=platform&labelColor=black)
 
 
 
