@@ -46,7 +46,13 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        task = form.save()
+        print(f"Task '{task.title}' created by {task.user}")  # Debugging
         return super(TaskCreate, self).form_valid(form)
+
+    def form_invalid(self, form):
+        print(form.errors)  # Debugging
+        return super().form_invalid(form)
 
 
 # Task Update View

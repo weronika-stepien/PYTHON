@@ -78,6 +78,47 @@ $ pip install -r requirements.txt
  ```bash
 $ git clone <repository_url>
 ```
+###### If you're using Docker:
+This section will guide you through the steps to build and run a Docker container for the Chatroom application using the provided Dockerfile.
+
+1. Build the Docker Image or pull it from the DockerHub:
+
+###### DockerHub
+Use the following command to pull the image from DockerHub:
+
+```bash
+$ docker pull weronikastepien/chat-room
+```
+
+And to run the container:
+
+```bash
+$ docker run -p 5000:5000 chat-room:web-app
+```
+Open your browser and go to:
+[http://127.0.0.1:5000](http://127.0.0.1:5000 "Chatroom application")
+
+###### Docker
+
+If you prefer build the Docker image from the Dockerfile use this command instead:
+```bash
+$ docker build -t chatroom-app .
+```
+-  `-t chatroom-app` assigns a name/tag to your Docker image. You can replace `chatroom-app` with your preferred name.
+- `.` specifies that the Dockerfile is in the current directory.
+
+2. Run the Docker Container
+   Once the image is built, you can create and run a container from that image using the command below:
+```bash
+$ docker run -d -p 5000:5000 --name chatroom-app-container chatroom-app
+```
+- `-d` runs the container in detached mode.
+- `-p 5000:5000` maps port `5000` on your local machine to port `5000` on the container.
+- `--name chatroom-app-container` assigns a custom name to the running container.
+- `chatroom-app` is the name of the image created earlier.
+
+3. Open your browser and go to:
+   [http://127.0.0.1:5000](http://127.0.0.1:5000 "Chatroom application")
 
 ###### If you're using the executable file:
 - Navigate to the repository's `releases` folder where the executable file is located.
@@ -90,7 +131,7 @@ $  python Chat.jar
 ###### If you're running from Source Code
 - Start the Flask-based chat room app locally:
 ```bash
-$ python app.py
+$ python main.py
 ```
 - Access the application via your web browser at:
 ```bash
@@ -99,7 +140,7 @@ http://127.0.0.1:5000
 
 #### Customization
 ###### Configuring Flask Settings
-You can modify the Flask application’s behavior by changing settings in the app.py file or adding environment variables. By default, the app runs in production mode. To enable debug mode, set the FLASK_ENV variable to development:
+You can modify the Flask application’s behavior by changing settings in the main.py file or adding environment variables. By default, the app runs in production mode. To enable debug mode, set the FLASK_ENV variable to development:
 
 **Steps to make the change:**
 ```bash
@@ -108,9 +149,9 @@ set FLASK_ENV=development  # Windows
 ```
 
 ###### Change Listening Port
-The default port is 5000. To change this, open app.py and modify the app.run() line:
+The default port is 5000. To change this, open main.py and modify the main.run() line:
 ```python
-app.run(host="0.0.0.0", port=8080)  # Example for changing to port 8080
+main.run(host="0.0.0.0", port=8080)  # Example for changing to port 8080
 ```
 
 ------------
